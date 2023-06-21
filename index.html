@@ -18,10 +18,12 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
+    <script src="js/style.js"></script>
 </head>
 
 <body class="bg-grad scrollku">
@@ -42,7 +44,7 @@
             <div class="col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="fw-bold text-grad">Hai, Saya Fanila</h1>
                 <p class="lead fw-normal text-white">Saya adalah Fullstack Web Developer, Graphic Designer & Video Editor</p>
-                <a class="btn btn-outline-light" href="#">Selanjutnya</a>
+                <a class="btn btn-outline-light" href="#tentang">Selanjutnya</a>
             </div>
         </section>
         
@@ -80,25 +82,34 @@
                 <h2 class="section-title fw-bold text-grad">Skill</h2>
                 <div class="my-3 py-3 px-3 mx-3">
                     <div class="row px-3 mx-3" style="justify-content: space-around;">
-                        <div class="col-4">
-                            <img src="images/tentang.png" alt="" class="w-100">
+                        <div class="skill-category">
+                            <button class="skill-button btn btn-outline-light" skill-attribute="frontend" data-scroll="show">
+                                <i class="bi bi-terminal-fill"></i> &nbsp; Frontend
+                            </button>
+                            <button class="skill-button btn btn-outline-light" skill-attribute="design" data-scroll="show">
+                                <i class="bi bi-palette-fill"></i> &nbsp; Design
+                            </button>
+                            <button class="skill-button btn btn-outline-light" skill-attribute="backend" data-scroll="show">
+                                <i class="bi bi-gear-fill"></i> &nbsp; Backend
+                            </button>
                         </div>
-                        <div class="col-8 text-start">
-                            <p>
-                                Halo semuanya, saya seorang Fullstack Web Developer, Graphic Designer, dan Video Editor.
-                                Saya mengawali karir sebagai Java Developer tahun 2018 hingga sekarang. 
-                                Sejak lulus kuliah, saya mengerjakan projek pembuatan website menggunakan Java dan PHP. 
-                                Selain membuat website, saya juga terlibat dalam pembuatan design grafis dan video editor.
-                            </p>
-                            <p>
-                                Kemampuan design grafis menunjang untuk mengembangkan aplikasi yang dibuat agar tampilannya menjadi estetik.
-                                Misalnya pembuatan ikon logo, background website, cover slide yang ada di aplikasi.
-                                Tidak hanya berfungsi dengan baik, aplikasi yang dibangun menjadi cantik dan user friendly.
-                            </p>
-                            <p>
-                                Awalnya saya hanya menyukai pembuatan Front End karena saya menyukai design grafis. 
-                                Tapi semakin lama saya juga mulai menyelami dunia Back End dan lambat laun mulai candu dengannya. 
-                            </p>
+                        <div class="skill-img-group">
+                            <div class="skill-img-wrapper">
+                                <img src="images/svg/css-icon.svg" alt="CSS Icon" skill-attribute="frontend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/html-icon.svg" alt="HTML Icon" skill-attribute="frontend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/java-icon.svg" alt="Java Icon" skill-attribute="backend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/javascript-icon.svg" alt="Javascript Icon" skill-attribute="frontend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/springboot-icon.svg" alt="Springboot Icon" skill-attribute="backend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/php-icon.svg" alt="PHP Icon" skill-attribute="backend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/laravel-icon.svg" alt="Laravel Icon" skill-attribute="backend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/react-icon.svg" alt="React JS Icon" skill-attribute="frontend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/bootstrap-icon.svg" alt="Bootstrap Icon" skill-attribute="frontend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/postman-icon.svg" alt="Postman Icon" skill-attribute="backend" loading="lazy" data-scroll="show">
+                                <img src="images/svg/figma-icon.svg" alt="Figma Icon" skill-attribute="design" loading="lazy" data-scroll="show">
+                                <img src="images/svg/adobe-photoshop-icon.svg" alt="Adobe Photoshop Icon" skill-attribute="design" loading="lazy" data-scroll="show">
+                                <img src="images/svg/adobe-illustrator-icon.svg" alt="Adobe Illustrator Icon" skill-attribute="design" loading="lazy" data-scroll="show">
+                                <img src="images/svg/git-icon.svg" alt="Git Icon" skill-attribute="backend" loading="lazy" data-scroll="show">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,9 +180,6 @@
             </div>
         </div>
     </footer>
-
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
