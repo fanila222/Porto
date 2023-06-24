@@ -144,11 +144,11 @@
 
 .bg-cover {
   background-image: url(images/slide.png);
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% !important;
 }
 
 body{
@@ -165,7 +165,7 @@ body{
   content: "";
   display: block;
   position: absolute;
-  width: 145px;
+  width: 250px;
   height: 3.5px;
   background: var(--text-gradient);
   border-radius: 10px;
@@ -296,3 +296,37 @@ body{
   justify-content: center;
 }
 
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px){
+  .about-content-wrapper {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .skill-category {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .skill-img-group{
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px 30px;
+  }
+
+  .skill-img-wrapper{
+      gap: 35px;
+  }
+
+  .skill-img-group img{
+      margin: 0;
+  }
+}
